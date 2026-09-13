@@ -4,1077 +4,406 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Josue Torzar</title>
+  <meta name="description" content="Portfolio of Josue Torzar, an IT graduate, web developer, mobile developer, and graphic designer from the Philippines.">
+  <title>Josue Torzar | Web Developer Portfolio</title>
   <link rel="icon" type="image/png" href="J.png">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-  <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-
-
-  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="J.png" class="h-8" alt="Flowbite Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Josue</span>
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-   <a href="#contact"
-   class="hidden sm:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-   Contact Me
-</a>
-
-        <button id="mobile-menu-btn" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-      </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page" onclick="closeMobileMenu()">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onclick="closeMobileMenu()">About</a>
-          </li>
-          <li>
-            <a href="#services" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onclick="closeMobileMenu()">Services</a>
-          </li>
-          <li>
-            <a href="#projects" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onclick="closeMobileMenu()">Projects</a>
-          
-          </li>
-          <li>
-             <a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onclick="closeMobileMenu()">Contact</a>
-          
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Hero Section -->
-  <section class="hero min-h-screen bg-base-200" id="home">
-  <div class="hero-content flex-col lg:flex-row-reverse w-full px-2 sm:px-4 md:px-10 items-center justify-center gap-6 md:gap-10">
-      <!-- Right Column: Picture -->
-      <div class="w-full lg:w-1/2 flex justify-center opacity-0 animate-fadeInRight animation-delay-300">
-        <img src="Hero.png" alt="IT Business Illustration"
-          class="w-[180px] sm:w-[250px] md:w-[350px] lg:w-[400px] h-auto rounded-sm shadow-none bg-transparent" />
-      </div>
-      <!-- Left Column: Text -->
-      <div class="w-full lg:w-1/2 max-w-xl text-center lg:text-left opacity-0 animate-fadeInLeft animation-delay-500">
-
-        <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
-          I am Josue a <span id="typing-text" class="text-blue-600"></span>
-        </h1>
-        <p class="py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg text-justify">
-          I'm Josue, a passionate Web Developer and Graphic Designer who brings ideas to life through clean code and
-          creative visuals. I help individuals and businesses build management systems, mobile apps, logo and product
-          packaging that make an impact.
-        </p>
-              <!-- Stats Section -->
-<div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-center">
-  <div class="p-2 rounded-xl shadow-md bg-gradient-to-br from-blue-100 to-white hover:scale-105 hover:shadow-lg transition-transform duration-300">
-    <div class="flex items-center justify-center gap-2 mb-1">
-      <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 21V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14M6 21h12M6 21a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6z"/></svg>
-      <h2 class="text-2xl font-bold text-blue-600">1+</h2>
-    </div>
-    <p class="text-sm text-gray-500">Year Experience</p>
-  </div>
-  <div class="p-2 rounded-xl shadow-md bg-gradient-to-br from-blue-100 to-white hover:scale-105 hover:shadow-lg transition-transform duration-300">
-    <div class="flex items-center justify-center gap-2 mb-1">
-      <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m6 5.87v-2a4 4 0 0 0-3-3.87m0 0a4 4 0 0 1 3-3.87m0 0a4 4 0 0 0-3-3.87m0 0a4 4 0 0 1 3-3.87"/></svg>
-      <h2 class="text-2xl font-bold text-blue-600">10+</h2>
-    </div>
-    <p class="text-sm text-gray-500">Clients</p>
-  </div>
-  <div class="p-2 rounded-xl shadow-md bg-gradient-to-br from-blue-100 to-white hover:scale-105 hover:shadow-lg transition-transform duration-300">
-    <div class="flex items-center justify-center gap-2 mb-1">
-      <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4m6 2a9 9 0 1 1-18 0a9 9 0 0 1 18 0z"/></svg>
-      <h2 class="text-2xl font-bold text-blue-600">15+</h2>
-    </div>
-    <p class="text-sm text-gray-500">Projects Done</p>
-  </div>
-</div>
-       <div class="flex flex-col items-center sm:items-start text-center sm:text-left mt-3 sm:mt-4">
-  <span class="text-gray-500 text-xs sm:text-sm mb-2">Connect with me</span>
-  <div class="flex gap-2 sm:gap-3 justify-center sm:justify-start">
-    
-    <!-- GitHub -->
-    <a href="https://github.com/Josue1720" target="_blank" rel="noopener" aria-label="GitHub">
-      <svg class="w-7 h-7 text-gray-700 hover:text-blue-600 hover:scale-110 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.186 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.479C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
-      </svg>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Josue Torzar home">
+      <img src="J.png" alt="Josue Torzar monogram">
+      <span>Josue Torzar</span>
     </a>
 
-    <!-- LinkedIn -->
-    <a href="https://linkedin.com/in/josue-torzar" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <svg class="w-7 h-7 text-gray-700 hover:text-blue-600 hover:scale-110 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/>
-      </svg>
-    </a>
-
-    <!-- Facebook -->
-    <a href="https://web.facebook.com/josueetorzar" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg class="w-7 h-7 text-gray-700 hover:text-blue-600 hover:scale-110 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.294h6.116c.729 0 1.321-.593 1.321-1.326v-21.349c0-.734-.592-1.326-1.325-1.326z"/>
-      </svg>
-    </a>
-
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/josueeeyy?igsh=MTJlNWdia2pod3JsMQ==" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg class="w-7 h-7 text-gray-700 hover:text-blue-600 hover:scale-110 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608-.058-1.266-.069-1.646-.069-4.85s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308 1.266-.058 1.646-.069 4.85-.069zm0-2.163c-3.259 0-3.667.012-4.947.07-1.276.058-2.687.334-3.678 1.325-.991.991-1.267 2.402-1.325 3.678-.058 1.28-.07 1.688-.07 4.947s.012 3.667.07 4.947c.058 1.276.334 2.687 1.325 3.678.991.991 2.402 1.267 3.678 1.325 1.28.058 1.688.07 4.947.07s3.667-.012 4.947-.07c1.276-.058 2.687-.334 3.678-1.325.991-.991 1.267-2.402 1.325-3.678.058-1.28.07-1.688.07-4.947s-.012-3.667-.07-4.947c-.058-1.276-.334-2.687-1.325-3.678-.991-.991-2.402-1.267-3.678-1.325-1.28-.058-1.688-.07-4.947-.07zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-      </svg>
-    </a>
-
-  </div>
-</div>
-
-        <a class="btn btn-success mt-3 sm:mt-4 text-white w-full sm:w-40" href="Torzar_Josue_Resume.pdf" download>Download Resume</a>
- 
-   
-      </div>
-    </div>
-  </section>
-  <section class="min-h-[60vh] rounded-lg" style="background-color: #1A56DB" id="about">
-    <div class="container p-2 mx-2 mb-2">
-      <h1 class="text-white font-bold text-2xl md:text-3xl text-center">ABOUT ME</h1>
-    </div>
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 sm:p-3">
-        <!-- Column 1 -->
-        <div data-aos="fade-right" data-aos-duration="1000">
-          <img src="TORZAR, JOSUE E SFTG CBSUA_0271.jpg" class="w-32 sm:w-44 md:w-72 h-auto mx-auto" alt="">
-        </div>
-        <!-- Column 2 -->
-        <div data-aos="fade-left" data-aos-duration="1000">
-          <p class="text-white text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-            Hi! I'm Josue Torzar a graduate of Bachelor of Science in Information Technology and proud Cum Laude. I'm a
-            passionate and self-driven developer from the Philippines with experience in web development using PHP,
-            MySQL, Python, Django and mobile app development using Flutter. I also have basic skills in UI/UX design,
-            logo creation, and graphic design. Right now, I'm focused on leveling up my programming skills, building
-            real-world projects, and preparing for job opportunities. I love solving problems through technology and
-            believe that continuous learning is the key to growth.
-          </p>
-          <h4 class="text-white text-lg font-bold mt-2">Skills</h4>
-          <div class="flex flex-wrap gap-2 sm:gap-3 mt-1">
-            <img src="python.png" class="h-8 transition-transform duration-300 hover:scale-110" alt="Python"
-              data-aos="zoom-in" data-aos-delay="0">
-            <img src="php.png" class="h-8 transition-transform duration-300 hover:scale-110" alt="PHP"
-              data-aos="zoom-in" data-aos-delay="50">
-            <img src="mysql.png" class="h-8 transition-transform duration-300 hover:scale-110" alt="MySQL"
-              data-aos="zoom-in" data-aos-delay="100">
-            <img src="django.png" class="h-8 transition-transform duration-300 hover:scale-110" alt="Django"
-              data-aos="zoom-in" data-aos-delay="150">
-            <img src="firebase.webp" class="h-8 transition-transform duration-300 hover:scale-110" alt="Firebase"
-              data-aos="zoom-in" data-aos-delay="200">
-            <img src="flutter.png" class="h-8 bg-white p-1 rounded transition-transform duration-300 hover:scale-110"
-              alt="Flutter" data-aos="zoom-in" data-aos-delay="250">
-            <img src="photoshop.png" class="h-8 bg-white p-1 rounded transition-transform duration-300 hover:scale-110"
-              alt="Photoshop" data-aos="zoom-in" data-aos-delay="300">
-            <img src="illustrator.png"
-              class="h-8 bg-white p-1 rounded transition-transform duration-300 hover:scale-110" alt="Illustrator"
-              data-aos="zoom-in" data-aos-delay="350">
-            <img src="canva.png" class="h-8 bg-white p-1 rounded transition-transform duration-300 hover:scale-110"
-              alt="Canva" data-aos="zoom-in" data-aos-delay="400">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-7 sm:py-10 bg-base-100 rounded-lg" id="services">
-    <div class="max-w-6xl mx-auto p-3 mb-2">
-      <h1 class="text-dark font-bold text-3xl mt-4 text-center">What I Offer</h1>
-      <p class="mt-3 text-center">Whether you're launching a startup, growing your brand, or improving your digital
-        presence I’m here to help. Here’s what I can do for you</p>
-      <div class="flex flex-row flex-wrap gap-3 sm:gap-5 justify-center mt-4 sm:mt-5">
-        <div
-          class="max-w-xs p-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700  transform transition-transform duration-300 hover:scale-105">
-          <img src="app.png" class="h-12 sm:h-15 w-auto mx-auto" alt="" srcset="">
-          <a href="#">
-            <h5 class="mb-1 text-lg font-semibold tracking-tight text-gray-900 dark:text-white text-center"> Android
-              Development</h5>
-          </a>
-          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-justify">I create clean, user-friendly Android apps that are
-            fast, easy to use, and designed to solve real-world problems whether for personal use or business needs.</p>
-       
-        </div>
-        <div
-          class="max-w-xs p-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700  transform transition-transform duration-300 hover:scale-105">
-          <img src="web.png" class="h-12 sm:h-15 w-auto mx-auto" alt="" srcset="">
-          <a href="#">
-            <h5 class="mb-1 text-lg font-semibold tracking-tight text-gray-900 dark:text-white text-center ">Web
-              Development</h5>
-          </a>
-          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-justify">I develop custom systems that simplify business
-            operations like tracking inventory, managing employees, or handling records all tailored to fit your needs.
-          </p>
-     
-        </div>
-        <div
-          class="max-w-xs p-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700   transform transition-transform duration-300 hover:scale-105">
-          <img src="gphcdesign.png" class="h-12 sm:h-15 w-auto mx-auto" alt="" srcset="">
-          <a href="#">
-            <h5 class="mb-1 text-lg font-semibold tracking-tight text-gray-900 dark:text-white text-center">Graphic
-              Design</h5>
-          </a>
-          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-justify">I design logos and product labels that are creative,
-            professional, and aligned with your brand’s identity, helping you stand out in the market.</p>
-       
-        </div>
-      </div>
-    </div>
-
-
-  </section>
-<section class="bg-gray-100 py-8 sm:py-12 px-1 sm:px-2" id="projects">
-
-  <div class="max-w-6xl mx-auto text-center">
-
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-      My Projects
-    </h2>
-
-    <div class="grid gap-5 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
-
-      <!-- ====================================================== -->
-      <!-- NEW PROJECTS -->
-      <!-- ====================================================== -->
-   <!-- LABORATORY INFORMATION SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/11.png"
-            alt="Laboratory Information System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Laboratory Information System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital system that allows laboratory personnel
-            to manage patient laboratory requests, results,
-            samples, and laboratory workflows efficiently.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- PERSONNEL E-SIGNATURE REGISTRATION SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/8.png"
-            alt="Personnel E-Signature Registration System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Personnel E-Signature Registration System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital system that allows personnel to securely
-            register and manage their electronic signatures
-            for official documents and transactions.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-           <!-- CERTIFICATION MANAGEMENT SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/9.png"
-            alt="Certificate Management System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Certificate Management System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital system that allows HR professionals to
-            track certificates and allow third-party verification using QR code.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-     <!-- HUMAN RESOURCE MANAGEMENT SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/HRIS.png"
-            alt="Human Resource Management System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Human Resource Management System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital system that allows HR professionals to
-            manage employee information, track performance,
-            and streamline administrative tasks.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- PERSONAL MANAGEMENT HUB -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/6.png"
-            alt="Personal Management Hub"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Personal Management Hub
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A personal management hub designed to organize tasks,
-            track activities, manage digital records, and streamline
-            daily operations in one place.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- MUNICIPAL VOLUNTEER MANAGEMENT SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/7.png"
-            alt="Municipal Volunteer Management System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Municipal Volunteer Management System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital hub that helps youth volunteers register,
-            join activities, submit participation proofs,
-            and stay connected with community projects.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-
-
-      <!-- SALES LOGBOOK SYSTEM -->
-      <div
-        class="order-1 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <div class="relative">
-
-          <img
-            src="projects/10.png"
-            alt="Sales Logbook System"
-            class="w-full h-40 sm:h-48 object-cover"
-          >
-
-          <span
-            class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-            NEW
-          </span>
-
-        </div>
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Sales Logbook System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A digital system that allows sales representatives
-            to log and manage their daily activities and
-            interactions with clients.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
- 
-
-
-   
-
-
-
-      <!-- ====================================================== -->
-      <!-- OLDER PROJECTS -->
-      <!-- ====================================================== -->
-
-
-      <!-- MDRRMO MANAGEMENT SYSTEM -->
-      <div
-        class="order-2 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <img
-          src="projects/1.png"
-          alt="MDRRMO Management System"
-          class="w-full h-40 sm:h-48 object-cover"
-        >
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            MDRRMO Management System
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            Efficiently manages incident, vehicle,
-            inventory, and personnel.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-orange-200 text-orange-700 px-2 py-1 rounded">
-              HTML
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              CSS
-            </span>
-
-            <span
-              class="text-sm bg-violet-100 text-violet-700 px-2 py-1 rounded">
-              Bootstrap
-            </span>
-
-            <span
-              class="text-sm bg-violet-300 text-violet-900 px-2 py-1 rounded">
-              PHP
-            </span>
-
-            <span
-              class="text-sm bg-yellow-500 text-green-900 px-2 py-1 rounded">
-              MySQL
-            </span>
-
-            <span
-              class="text-sm bg-yellow-100 text-yellow-700 px-2 py-1 rounded">
-              JavaScript
-            </span>
-
-          </div>
-
-
-          <a
-            href="https://mdrrmolibmanan.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-
-            Visit Website
-            <i class="fas fa-globe"></i>
-
-          </a>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- BULLETIN MANAGER -->
-      <div
-        class="order-2 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <img
-          src="projects/2.png"
-          alt="Bulletin Manager"
-          class="w-full h-40 sm:h-48 object-cover"
-        >
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Bulletin Manager
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            Organizes, schedules, and displays important
-            announcements for effective information dissemination.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-blue-200 text-blue-700 px-2 py-1 rounded">
-              Flutter
-            </span>
-
-            <span
-              class="text-sm bg-orange-300 text-orange-700 px-2 py-1 rounded">
-              Firebase
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- E-SECRETARY -->
-      <div
-        class="order-2 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <img
-          src="projects/3.png"
-          alt="E-Secretary"
-          class="w-full h-40 sm:h-48 object-cover"
-        >
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            E-Secretary
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            Manages receiving, tracking, and organizing hospital
-            documents for faster, accurate, and efficient processing.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Flutter
-            </span>
-
-            <span
-              class="text-sm bg-orange-100 text-orange-700 px-2 py-1 rounded">
-              Firebase
-            </span>
-
-            <span
-              class="text-sm bg-green-100 text-green-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- E-SECURITY GUARD -->
-      <div
-        class="order-2 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <img
-          src="projects/4.png"
-          alt="E-Security Guard"
-          class="w-full h-40 sm:h-48 object-cover"
-        >
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            E-Security Guard
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            Digitalizes pass slips and vehicle identification
-            to enhance hospital security and entry management.
-          </p>
-
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span
-              class="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded">
-              Flutter
-            </span>
-
-            <span
-              class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-              Django
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- GRAPHIC DESIGNS -->
-      <div
-        class="order-2 bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full">
-
-        <img
-          src="projects/5.png"
-          alt="Graphic Designs"
-          class="w-full h-40 sm:h-48 object-cover"
-        >
-
-
-        <div class="p-6 text-left">
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Graphic Designs
-          </h3>
-
-          <p class="text-gray-600 mb-4">
-            A collection of graphic design projects,
-            layouts, and creative visual materials.
-          </p>
-
-
-          <a
-            href="JOSUE_TORZAR.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-
-            View PDF
-
-          </a>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
- <section id="contact" class="py-10 sm:py-16 px-2 sm:px-4 flex items-center justify-center min-h-screen">
- 
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl w-full grid grid-cols-1 md:grid-cols-2">
-
-      <!-- Left: -->
-      <div class="bg-blue-900 text-white p-5 sm:p-8">
-        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-        <p class="text-sm mb-8">
-          I’d love to hear from you! Whether you have a project in mind, need help with something, or just want to connect — feel free to reach out anytime.
-
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="Torzar_Josue_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Available for developer and IT roles</p>
+        <h1>IT graduate building practical web systems, mobile apps, and clear digital experiences.</h1>
+        <p class="hero-text">
+          I am Josue Torzar,  BS Information Technology graduate focused on Django, PHP, MySQL, Flutter, Firebase, and UI/UX. I build systems that help teams manage records, workflows, documents, people, and reports with less manual effort.
         </p>
 
-        <div class="space-y-6">
-          <div class="flex items-start">
-            <i class="fas fa-phone-alt mr-4 mt-1"></i>
-            <div>
-              <p class="text-sm">Call Me</p>
-              <p class="font-semibold text-base">+6390-188-5997</p>
-            </div>
-          </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="#contact">Hire / Contact Me</a>
+        </div>
 
-          <div class="flex items-start">
-            <i class="fas fa-envelope mr-4 mt-1"></i>
-            <div>
-              <p class="text-sm">Email Me</p>
-              <p class="font-semibold text-base">torzarjosue19@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <i class="fas fa-map-marker-alt mr-4 mt-1"></i>
-            <div>
-              <p class="text-sm">Address</p>
-              <p class="font-semibold text-base">Zone -3 , New Poblacion, Cabusao, Camarines Sur </p>
-            </div>
-          </div>
+        <div class="social-row" aria-label="Social links">
+          <a href="https://github.com/Josue1720" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/josue-torzar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://web.facebook.com/josueetorzar" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/josueeeyy?igsh=MTJlNWdia2pod3JsMQ==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
-      <!-- Right: Contact Form -->
-      <div class="p-5 sm:p-8">
-        <h2 class="text-2xl font-bold mb-4">Send Me a Message</h2>
-        <p class="text-sm text-gray-600 mb-6">
-       Got a question or a project you'd like to discuss? Just fill out the form below and I’ll get back to you as soon as possible.
-        </p>
+      <div class="hero-visual" aria-label="Josue Torzar portfolio preview">
+        <img src="Hero.png" alt="Illustration representing IT systems and software development">
+        <div class="availability-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Recruiter-ready portfolio</strong>
+            <p>Systems, apps, and design work in one place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <form class="space-y-4" action="https://formspree.io/f/movlakqv"method="POST">
-          <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <textarea name="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-          <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700">
-            Submit
-          </button>
-          <p id="form-success" class="hidden text-green-600 font-semibold mt-2">Thank you! Your message has been sent.</p>
+    <section class="proof-strip" aria-label="Portfolio highlights">
+      <article>
+        <strong>15+</strong>
+        <span>Completed projects</span>
+      </article>
+      <article>
+        <strong>10+</strong>
+        <span>Client and school projects</span>
+      </article>
+      <article>
+        <strong>1+</strong>
+        <span>Year of applied experience</span>
+      </article>
+      <article>
+        <strong>Cum Laude</strong>
+        <span>BS Information Technology</span>
+      </article>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>A developer who can understand operations, design usable screens, and ship practical systems.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="portrait-panel">
+          <img src="TORZAR, JOSUE E SFTG CBSUA_0271.jpg" alt="Portrait of Josue Torzar">
+        </div>
+        <div class="about-content">
+          <p>
+            I specialize in building management systems for real workflows such as laboratory requests, HR records, incident reports, document tracking, certificates, and activity logs. My advantage is combining development, UI thinking, and visual design so the final output is both functional and easy to present to users.
+          </p>
+
+          <div class="skills-grid" aria-label="Technical skills">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Bootstrap</span>
+            <span>JavaScript</span>
+            <span>UI/UX</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Canva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading center">
+        <p class="eyebrow">What I Offer</p>
+        <h2>Useful output for teams that need organized digital workflows.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <img src="web.png" alt="">
+          <h3>Web System Development</h3>
+          <p>Custom portals, dashboards, records management, reporting flows, and admin tools built around actual office processes.</p>
+        </article>
+        <article class="service-card">
+          <img src="app.png" alt="">
+          <h3>Mobile App Development</h3>
+          <p>Flutter apps for announcements, document workflows, security logs, and field-friendly data entry.</p>
+        </article>
+        <article class="service-card">
+          <img src="gphcdesign.png" alt="">
+          <h3>Graphic and UI Design</h3>
+          <p>Clean layouts, visual identity materials, product labels, and interface designs that make information easier to understand.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading project-heading">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects recruiters can inspect quickly.</h2>
+        </div>
+        <p>
+          Click any project to view a larger preview and the most important features. Graphic design opens as a scrollable PDF preview, so viewers can browse without downloading.
+        </p>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us talk about the role, project, or system you need.</h2>
+          <p>I am based in Camarines Sur, Philippines and open to developer, IT staff, web system, mobile app, and design opportunities.</p>
+
+          <div class="contact-list">
+            <a href="tel:+63901885997"><i class="fas fa-phone"></i><span>+63 901 885 997</span></a>
+            <a href="mailto:torzarjosue19@gmail.com"><i class="fas fa-envelope"></i><span>torzarjosue19@gmail.com</span></a>
+            <span><i class="fas fa-location-dot"></i><span>Cabusao, Camarines Sur</span></span>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/movlakqv" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about the opportunity or project" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Message</button>
+          <p class="form-success" hidden>Thank you. Your message has been sent.</p>
         </form>
-        <script>
-        // Show a thank you message after successful submission (Formspree redirects by default, this prevents redirect)
-        document.querySelector('form[action^="https://formspree.io/"]').addEventListener('submit', async function(e) {
-          e.preventDefault();
-          const form = e.target;
-          const data = Object.fromEntries(new FormData(form));
-          const res = await fetch(form.action, {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: new FormData(form)
-          });
-          if (res.ok) {
-            form.reset();
-            document.getElementById('form-success').classList.remove('hidden');
-          }
-        });
-        </script>
       </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <span>Josue Torzar Portfolio</span>
+    <span>Web Developer | Mobile Developer | Graphic Designer</span>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-shell">
+      <button class="modal-close" type="button" aria-label="Close project preview">&times;</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-content">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="tag-list" id="modalTags"></div>
+        <div class="feature-list" id="modalFeatures"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
     </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </dialog>
+
   <script>
-    // Hamburger menu toggle for mobile
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navbarSticky = document.getElementById('navbar-sticky');
-    if (mobileMenuBtn && navbarSticky) {
-      mobileMenuBtn.addEventListener('click', function() {
-        navbarSticky.classList.toggle('hidden');
-      });
-    }
-    // Close mobile menu when a link is clicked
-    function closeMobileMenu() {
-      if (window.innerWidth < 768) {
-        navbarSticky.classList.add('hidden');
+    const projects = [
+      {
+        title: "Laboratory Information System",
+        category: "Django Web System",
+        image: "projects/11.png",
+        description: "A hospital laboratory workflow system for managing patient requests, samples, test results, verification, and released reports.",
+        tags: ["Django", "Bootstrap", "HTML", "Workflow"],
+        features: ["Patient laboratory request tracking", "Section-based result encoding and verification", "Released report workflow", "Designed for laboratory personnel efficiency"]
+      },
+      {
+        title: "Personnel E-Signature Registration System",
+        category: "Django Web System",
+        image: "projects/8.png",
+        description: "A secure personnel signature registration tool for official documents and internal transactions.",
+        tags: ["Django", "Bootstrap", "Registration"],
+        features: ["Personnel profile and signature capture", "Digital record organization", "Cleaner document validation process", "Built for administrative use"]
+      },
+      {
+        title: "Certificate Management System",
+        category: "Django Web System",
+        image: "projects/9.png",
+        description: "A certificate tracking and verification system that helps HR teams manage records and support third-party checking through QR codes.",
+        tags: ["Django", "QR Code", "HR"],
+        features: ["Certificate record management", "QR-based third-party verification", "Faster authenticity checking", "HR-friendly dashboard structure"]
+      },
+      {
+        title: "Human Resource Management System",
+        category: "Django Web System",
+        image: "projects/HRIS.png",
+        description: "A human resource information system for managing employee data, performance information, and administrative records.",
+        tags: ["Django", "Bootstrap", "HRIS"],
+        features: ["Employee profile management", "Administrative record organization", "Performance tracking support", "Dashboard-centered HR workflow"]
+      },
+      {
+        title: "Personal Management Hub",
+        category: "Productivity System",
+        image: "projects/6.png",
+        description: "A personal dashboard for organizing tasks, daily activities, files, and digital records in one practical workspace.",
+        tags: ["Django", "Productivity", "Dashboard"],
+        features: ["Task and activity organization", "Centralized personal records", "Simple daily workflow tracking", "Clean dashboard layout"]
+      },
+      {
+        title: "Municipal Volunteer Management System",
+        category: "Community Web System",
+        image: "projects/7.png",
+        description: "A platform for youth volunteer registration, activity participation, proof submission, and community project coordination.",
+        tags: ["Django", "Community", "Volunteer"],
+        features: ["Volunteer registration", "Activity joining and tracking", "Participation proof submission", "Community project visibility"]
+      },
+      {
+        title: "Sales Logbook System",
+        category: "Business Web System",
+        image: "projects/10.png",
+        description: "A digital logbook for sales representatives to record client visits, activities, and daily interactions.",
+        tags: ["Django", "Sales", "Logbook"],
+        features: ["Daily sales activity logging", "Client interaction records", "Cleaner monitoring workflow", "Useful for field reporting"]
+      },
+      {
+        title: "MDRRMO Management System",
+        category: "PHP Web System",
+        image: "projects/1.png",
+        description: "A deployed management system for municipal disaster risk reduction operations, including incidents, vehicles, inventory, and personnel.",
+        tags: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+        features: ["Incident and emergency record management", "Vehicle and inventory monitoring", "Personnel records", "Live website deployment"],
+        link: "https://mdrrmolibmanan.com"
+      },
+      {
+        title: "Bulletin Manager",
+        category: "Flutter App",
+        image: "projects/2.png",
+        description: "A mobile app for organizing, scheduling, and displaying announcements for faster information dissemination.",
+        tags: ["Flutter", "Firebase"],
+        features: ["Announcement scheduling", "Mobile-first information display", "Firebase-backed content management", "Designed for quick updates"]
+      },
+      {
+        title: "E-Secretary",
+        category: "Flutter and Django",
+        image: "projects/3.png",
+        description: "A document receiving and tracking app for hospital administrative workflows.",
+        tags: ["Flutter", "Firebase", "Django"],
+        features: ["Document receiving workflow", "Tracking and organization", "Faster office processing", "Mobile and backend integration"]
+      },
+      {
+        title: "E-Security Guard",
+        category: "Flutter App",
+        image: "projects/4.png",
+        description: "A security workflow app for digitizing pass slips and vehicle identification processes.",
+        tags: ["Flutter", "Django"],
+        features: ["Digital pass slip handling", "Vehicle identification support", "Improved entry monitoring", "Security-focused data flow"]
+      },
+      {
+        title: "Graphic Design Portfolio",
+        category: "Design PDF Preview",
+        image: "projects/5.png",
+        description: "A scrollable collection of layouts, product labels, branding materials, and visual design work.",
+        tags: ["Photoshop", "Illustrator", "Canva"],
+        pdf: "JOSUE_TORZAR.pdf"
       }
+    ];
+
+    const projectGrid = document.getElementById("projectGrid");
+    const modal = document.getElementById("projectModal");
+    const modalMedia = document.getElementById("modalMedia");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalCategory = document.getElementById("modalCategory");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalTags = document.getElementById("modalTags");
+    const modalFeatures = document.getElementById("modalFeatures");
+    const modalActions = document.getElementById("modalActions");
+
+    projectGrid.innerHTML = projects.map((project, index) => `
+      <article class="project-card">
+        <button type="button" data-project-index="${index}" aria-label="Open ${project.title} preview">
+          <img src="${project.image}" alt="${project.title}">
+          <span class="project-type">${project.category}</span>
+          <span class="project-title">${project.title}</span>
+          <span class="project-summary">${project.description}</span>
+          <span class="project-link">View details</span>
+        </button>
+      </article>
+    `).join("");
+
+    function openProject(project) {
+      modalTitle.textContent = project.title;
+      modalCategory.textContent = project.category;
+      modalDescription.textContent = project.description;
+      modalTags.innerHTML = project.tags.map(tag => `<span>${tag}</span>`).join("");
+      modalActions.innerHTML = project.link ? `<a class="button secondary" href="${project.link}" target="_blank" rel="noopener">Visit Website</a>` : "";
+
+      if (project.pdf) {
+        modalMedia.innerHTML = `
+          <iframe src="${project.pdf}#toolbar=0&navpanes=0" title="${project.title} PDF preview"></iframe>
+          <a class="pdf-fallback" href="${project.pdf}" target="_blank" rel="noopener">Open PDF in new tab</a>
+        `;
+        modalFeatures.innerHTML = `
+          <h3>Preview</h3>
+          <p class="modal-note">The PDF is embedded here so recruiters and clients can browse the design portfolio directly without downloading first.</p>
+        `;
+      } else {
+        modalMedia.innerHTML = `<img src="${project.image}" alt="${project.title} preview">`;
+        modalFeatures.innerHTML = `
+          <h3>Best Features</h3>
+          <ul>${project.features.map(feature => `<li>${feature}</li>`).join("")}</ul>
+        `;
+      }
+
+      modal.showModal();
+      document.body.classList.add("modal-open");
     }
-  </script>
-  <script>
-    // Simple animated carousel for projects
-    const carouselInner = document.getElementById('carousel-inner');
-    const totalSlides = 4;
-    let currentSlide = 0;
-    function updateCarousel() {
-      carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    document.getElementById('prevBtn').onclick = function() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-    };
-    document.getElementById('nextBtn').onclick = function() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateCarousel();
-    };
-    // Auto-advance every 4 seconds
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateCarousel();
-    }, 4000);
-    // Animate on load
-    window.addEventListener('DOMContentLoaded', updateCarousel);
-  </script>
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    var typed = new Typed("#typing-text", {
-      strings: ["Programmer", "Graphic Designer", "Web Developer"],
-      typeSpeed: 80,
-      backSpeed: 50,
-      backDelay: 1000,
-      loop: true
+
+    projectGrid.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-project-index]");
+      if (!button) return;
+      openProject(projects[Number(button.dataset.projectIndex)]);
+    });
+
+    document.querySelector(".modal-close").addEventListener("click", () => modal.close());
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) modal.close();
+    });
+    modal.addEventListener("close", () => document.body.classList.remove("modal-open"));
+
+    const menuButton = document.querySelector(".menu-button");
+    const siteNav = document.querySelector(".site-nav");
+    menuButton.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+    siteNav.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") {
+        siteNav.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    const contactForm = document.querySelector(".contact-form");
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(contactForm)
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        contactForm.querySelector(".form-success").hidden = false;
+      }
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 
-<footer class="w-full bg-primary text-primary-content flex flex-col md:flex-row items-center justify-between px-4 py-3 text-sm gap-2">
-  <div class="flex items-center gap-2">
-    <img src="Hero.png" alt="Josue Logo" class="h-8 w-8 rounded-full border border-white shadow-sm" />
-    <span class="font-semibold">Josue Torzar &middot; Portfolio</span>
-  </div>
-  <div class="flex gap-3 mt-2 md:mt-0">
-    <a href="https://github.com/Josue1720" target="_blank" rel="noopener" aria-label="GitHub">
-      <i class="fab fa-github text-xl hover:text-white transition-colors"></i>
-    </a>
-    <a href="https://linkedin.com/in/josue-torzar" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <i class="fab fa-linkedin text-xl hover:text-white transition-colors"></i>
-    </a>
-    <a href="https://web.facebook.com/josueetorzar" target="_blank" rel="noopener" aria-label="Facebook">
-      <i class="fab fa-facebook text-xl hover:text-white transition-colors"></i>
-    </a>
-    <a href="https://www.instagram.com/josueeeyy?igsh=MTJlNWdia2pod3JsMQ==" target="_blank" rel="noopener" aria-label="Instagram">
-      <i class="fab fa-instagram text-xl hover:text-white transition-colors"></i>
-    </a>
-  </div>
-  <div class="text-xs text-center md:text-right mt-2 md:mt-0">
-    &copy; 2025 Josue Torzar. All rights reserved.
-  </div>
-</footer>
+</html>
